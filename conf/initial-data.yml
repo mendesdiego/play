@@ -26,24 +26,35 @@ Post(firstBobPost):
                     is controlled and used here, even though the technical details of storing it are 
                     delegated to the infrastructure. This layer is the heart of business software.
 
+Tag(play):
+    name:           Play
+ 
+Tag(architecture):
+    name:           Architecture
+ 
+Tag(test):
+    name:           Test
+ 
+Tag(mvc):
+    name:           MVC
+
+Post(jeffPost):
+    title:          The MVC application
+    postedAt:       2009-06-06
+    author:         jeff
+    tags:
+                    - play
+                    - architecture
+                    - mvc
+    content:        >
+                    A Play
+
 Post(secondBobPost):
     title:          Just a test of YABE
     postedAt:       2009-03-25
     author:         bob
     content:        >
                     Well, it's just a test.
-                    
-Post(jeffPost):
-    title:          The MVC application
-    postedAt:       2009-06-06
-    author:         jeff
-    content:        >
-                    A Play! application follows the MVC architectural pattern as applied to the 
-                    architecture of the Web.
-                    
-                    This pattern splits the application into separate layers: the Presentation 
-                    layer and the Model layer. The Presentation layer is further split into a 
-                    View and a Controller layer.
                     
 Comment(c1):
     author:         Guest
@@ -65,4 +76,4 @@ Comment(c3):
                     This post is useless ?
     postedAt:       2009-04-05
     post:           secondBobPost    
-                 
+
